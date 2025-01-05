@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Report</title>
+    <link rel="stylesheet" href="issue_report_style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Issue Report</h1>
+        <form id="issueForm" enctype="multipart/form-data">
+            <label for="userId">User ID</label>
+            <input type="text" id="userId" name="userId" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="issueType">Issue Type</label>
+            <select id="issueType" name="issueType" required>
+                <option value="bug">Bug</option>
+                <option value="feature">Feature Request</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="screenshot">Screenshot</label>
+            <input type="file" id="screenshot" name="screenshot">
+
+            <label for="description">Issue Description</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <script src="issue_report_script.js"></script>
+</body>
+</html>

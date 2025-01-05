@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="bg-video">
+        <source src="src/Moon Art  (2x Loop)(4K_HD).mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="logo">
+        <img src="src/logo.png" alt="Website Logo">
+    </div>
+
+    <!-- Login Container -->
+    <div class="login-container">
+        <!-- Login Form -->
+        <form action="dashboard/dashboard.html" method="post" class="login-form">
+            <h2>Login</h2>
+            <div class="input-container">
+                <input type="text" id="userid" name="userid" required>
+                <label for="userid">User ID</label>
+            </div>
+            <div class="input-container">
+                <input type="password" id="password" name="password" required>
+                <label for="password">Password</label>
+            </div>
+ <!-- CAPTCHA Display -->
+ <div class="captcha-container">
+    <span id="captcha-display"></span>
+    <button type="button" id="refresh-captcha">Refresh</button>
+</div>
+<input type="text" id="captcha-input" placeholder="Enter CAPTCHA" required>
+
+            
+            <button type="submit" class="login-btn"  >Login</button>
+            <div class="extra-links">
+                <a href="#" class="forgot-password">Forgot Password?</a>
+                <a href="#" class="help-center">Help Center</a>
+            </div>
+        </form>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>PSRE &copy; 2024 SIH. All rights reserved. Terms and condition</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
